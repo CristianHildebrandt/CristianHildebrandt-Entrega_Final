@@ -1,0 +1,110 @@
+@import "variableGlobal";
+@import "media"; 
+@import "fuentes";
+@import "generales";
+@import "nav";
+@import "anim";
+@import "article";
+@import "header";
+@import "footer";
+
+nav ul, .ad, article, aside{
+    color: $a;
+}
+
+
+header{
+    grid-area: header;
+}
+
+.contenido{
+    grid-area: contenido;
+}
+nav{
+    grid-area: nav
+}
+
+aside{
+    grid-area: sidebar;
+}
+
+.ad{
+    grid-area: ad;
+}
+
+.galeria-grid{
+    grid-area: galeria;
+}
+footer{
+    grid-area: footer;
+}
+
+
+
+.ad img{
+    width: 200px;
+    height: 100px;
+}
+
+.mapa img{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+$border:3px solid;
+.boton{
+        text-decoration: none;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        color: $c;
+        background-color: $color;
+        border-radius: 6px;
+        border: $border;
+        margin: 15px;
+}
+
+
+@media (min-width:500px){
+
+    nav ul{
+        font-display: flex;
+        justify-content: space-between;
+    }
+
+    footer{
+        margin-top: 0;
+        background-image: linear-gradient( to left, black, grey);
+    };
+}
+
+@media (min-width:768px){
+
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul, .ad, article {
+        color: $b;
+    }
+
+    header, h1, h2, a{
+        color: $a;
+    }
+
+    .galeria-grid{
+        background-color: $c;
+    }
+
+    footer{
+        margin-top: 1.5em;
+        background-image: linear-gradient(to left, black,grey);
+    }
+}
+
+@media(min-width:1024px){
+    body{
+        background-color: $b;
+    }
+}

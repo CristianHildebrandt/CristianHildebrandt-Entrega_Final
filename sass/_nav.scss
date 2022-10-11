@@ -1,0 +1,18 @@
+nav{
+    ul{
+        li{
+            list-style-type: none;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            a{
+                color: white;
+                text-decoration: none;
+                    &:hover{
+                        color:rgb(57, 4, 107);
+                    }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.anim{
+    height: 50px;
+    padding: 10px;
+        &:hover{
+            transform: scale(1.5);
+        }
+}
+
+.anim1{
+    background-color: blueviolet;
+    color:aliceblue;
+}

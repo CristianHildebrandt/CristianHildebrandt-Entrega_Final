@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Oooh+Baby&family=Poppins:wght@600&family=Roboto:wght@100&family=Sedgwick+Ave&display=swap");
+.envoltura {
+  background-color: black;
+  margin-bottom: 1.5em;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "nav" "contenido" "contenido" "ad" "galeria" "footer";
+}
+@media (min-width: 500px) {
+  .envoltura {
+    margin: 0;
+    grid-template-areas: "nav nav" "contenido contenido" "ad ad" "galeria galeria" "footer footer";
+  }
+}
+@media (min-width: 768px) {
+  .envoltura {
+    background: black;
+    margin-bottom: 1.5em;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "nav nav nav" "contenido contenido contenido" "ad ad ad" "galeria galeria galeria" "footer footer footer";
+  }
+}
+@media (min-width: 1024px) {
+  .envoltura {
+    background: black;
+    margin-bottom: 1.5em;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "nav nav nav" "contenido contenido contenido" "ad ad ad" "galeria galeria galeria" "footer footer footer";
+    color: grey;
+  }
+}
+
+.padre {
+  background-color: grey;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px;
+  justify-items: center;
+}
+@media (min-width: 768px) {
+  .padre {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin: 3em;
+  }
+}
+@media (min-width: 1024px) {
+  .padre {
+    padding: 1.5em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: 1fr 1fr 1fr 1fr;
+    height: auto;
+    margin: 0;
+  }
+}
+
+img {
+  width: 300px;
+  height: 250px;
+  margin-top: 15px;
+}
+@media (min-width: 500px) {
+  img {
+    width: 350px;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  img {
+    width: 200px;
+    height: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  img {
+    width: 400px;
+    height: 300px;
+    margin-top: 20px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav ul li {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: rgb(57, 4, 107);
+}
+
+.anim {
+  height: 50px;
+  padding: 10px;
+}
+.anim:hover {
+  transform: scale(1.5);
+}
+
+.anim1 {
+  background-color: blueviolet;
+  color: aliceblue;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+header {
+  font-size: large;
+  display: grid;
+  justify-content: center;
+}
+header h2 {
+  color: whitesmoke;
+}
+
+footer {
+  padding: 3em;
+  background-image: linear-gradient(to left, black, gray);
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+.main-footer img {
+  height: 50px;
+  width: 50px;
+}
+
+nav ul, .ad, article, aside {
+  color: whitesmoke;
+}
+
+header {
+  grid-area: header;
+}
+
+.contenido {
+  grid-area: contenido;
+}
+
+nav {
+  grid-area: nav;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+.ad {
+  grid-area: ad;
+}
+
+.galeria-grid {
+  grid-area: galeria;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.ad img {
+  width: 200px;
+  height: 100px;
+}
+
+.mapa img {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.boton {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: lightgray;
+  background-color: black;
+  border-radius: 6px;
+  border: 3px solid;
+  margin: 15px;
+}
+
+@media (min-width: 500px) {
+  nav ul {
+    font-display: flex;
+    justify-content: space-between;
+  }
+  footer {
+    margin-top: 0;
+    background-image: linear-gradient(to left, black, grey);
+  }
+}
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul, .ad, article {
+    color: grey;
+  }
+  header, h1, h2, a {
+    color: whitesmoke;
+  }
+  .galeria-grid {
+    background-color: lightgray;
+  }
+  footer {
+    margin-top: 1.5em;
+    background-image: linear-gradient(to left, black, grey);
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background-color: grey;
+  }
+}/*# sourceMappingURL=style.css.map */
