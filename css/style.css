@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Oooh+Baby&family=Poppins:wght@600&family=Roboto:wght@100&family=Sedgwick+Ave&display=swap");
+img {
+  border-radius: 10px;
+}
+
 .envoltura {
   background-color: black;
   margin-bottom: 1.5em;
@@ -37,6 +41,7 @@
   grid-template-rows: 1fr;
   gap: 15px;
   justify-items: center;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .padre {
@@ -45,6 +50,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
     margin: 3em;
+    align-items: center;
   }
 }
 @media (min-width: 1024px) {
@@ -54,6 +60,7 @@
     grid-area: 1fr 1fr 1fr 1fr;
     height: auto;
     margin: 0;
+    align-items: center;
   }
 }
 
@@ -70,8 +77,8 @@ img {
 }
 @media (min-width: 768px) {
   img {
-    width: 200px;
-    height: 150px;
+    width: 300px;
+    height: 250px;
   }
 }
 @media (min-width: 1024px) {
@@ -121,7 +128,7 @@ nav ul li a:hover {
 
 .anim1 {
   background-color: blueviolet;
-  color: aliceblue;
+  color: rgb(59, 68, 75);
 }
 
 article {
@@ -137,7 +144,7 @@ header {
   justify-content: center;
 }
 header h2 {
-  color: whitesmoke;
+  color: rgb(20, 16, 16);
 }
 
 footer {
@@ -153,7 +160,7 @@ footer {
 }
 
 nav ul, .ad, article, aside {
-  color: whitesmoke;
+  color: rgb(136, 49, 121);
 }
 
 header {
@@ -195,6 +202,7 @@ footer {
   display: flex;
   justify-content: center;
   align-content: center;
+  padding: 15px;
 }
 
 .boton {
@@ -227,7 +235,7 @@ footer {
     color: grey;
   }
   header, h1, h2, a {
-    color: whitesmoke;
+    color: rgb(136, 49, 121);
   }
   .galeria-grid {
     background-color: lightgray;

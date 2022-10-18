@@ -1,4 +1,16 @@
 $color: black;
-$a: whitesmoke;
+$a: rgb(136, 49, 121);
 $b: grey;
 $c: lightgray;
+
+
+@mixin img ($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+img{ 
+    @include img (10px); 
+}
