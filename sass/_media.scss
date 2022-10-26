@@ -3,6 +3,8 @@
     margin-bottom: 1.5em;
     display: grid;
     gap:20px;
+    justify-items: center;
+    align-items: center;
     grid-template-areas: 
     "nav"
     "contenido"

@@ -121,9 +121,10 @@ nav ul li a:hover {
 .anim {
   height: 50px;
   padding: 10px;
+  border-radius: 25px;
 }
 .anim:hover {
-  transform: scale(1.5);
+  transform: scale(1.02);
 }
 
 .anim1 {
